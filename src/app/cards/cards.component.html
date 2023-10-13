@@ -1,0 +1,19 @@
+<div class="card mb-5 mb-lg-0">
+  <div class="card-body">
+    <div class="headers d-flex flex-column align-items-center g-5">
+      <h5 class="card-title text-muted text-uppercase text-center">{{plan}}</h5>
+      <h6 class="card-price text-center">{{price}}<span class="period">/month</span></h6>
+    </div>
+    <hr>
+    <ul class="fa-ul list-unstyled" *ngFor="let item of unMutedItems; index as i;">
+      <li class="list-item d-flex align-items-center gx-20"><span class="fa-li"><mat-icon>check</mat-icon></span>{{item}}</li>
+    </ul>
+
+    <ul class="fa-ul text-muted list-unstyled" *ngFor="let item of mutedItems; index as i;">
+      <li class="list-item d-flex align-items-center gx-10"><span class="fa-li"><mat-icon>close</mat-icon></span>{{item}}</li>
+    </ul>    
+    <div class="d-grid">
+      <a href="#" class="btn btn-primary text-uppercase">Button</a>
+    </div>
+  </div>
+</div>
